@@ -4,6 +4,7 @@ Build Scripts
 npm install
 download expo client
 yarn start
+scan barcode
 
 1.Authentication based on  name  as username and birth year as password.
 2. Search functionality in planets list page

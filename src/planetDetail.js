@@ -4,7 +4,8 @@ import {
     Image,
     View,
     Dimensions,
-    TouchableOpacity
+    TouchableOpacity,
+    Platform
 } from 'react-native';
 import styles from "../assets/styles";
 import NavigationBar from 'react-native-navbar';
@@ -77,8 +78,12 @@ export default class PlanetDetail extends React.Component {
   
         return (
             <View style={styles.container}>
+            <View
+                style={Platform.OS =='ios'? styles.navigationBariOS : styles.navigationBarAndroid}>
+
                 <NavigationBar title={titleConfig} rightButton={rightButtonConfig}
                 leftButton={leftButtonConfig}/>
+                </View>
                   <View style={[styles.line,{marginTop:10}]} />
 
                 <View style={{marginTop:10}}>

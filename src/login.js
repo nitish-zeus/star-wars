@@ -124,6 +124,8 @@ export default class Login extends React.Component {
                                 </Text>
                                 <TextInput
                                  underlineColorAndroid={'transparent'}
+                                 placeholder={'username'}
+
                                     style={{
                                     height: 40,
                                     borderColor: 'gray',
@@ -141,6 +143,8 @@ export default class Login extends React.Component {
                                     Password
                                 </Text>
                                 <TextInput
+                                placeholder={'password'}
+
                                 underlineColorAndroid={'transparent'}
                                     style={{
                                     height: 40,
