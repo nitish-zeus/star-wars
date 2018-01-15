@@ -10,7 +10,7 @@ import {
     FlatList,
     TouchableOpacity,
     Button,
-    
+    Platform
 } from 'react-native';
 import styles from "../assets/styles";
 import NavigationBar from 'react-native-navbar';
@@ -177,10 +177,15 @@ async onSearch(){
         };
         return (
             <View style={styles.container}>
+                        <View 
+                        style={Platform.OS =='ios'? styles.navigationBariOS : styles.navigationBarAndroid}>
+
                 <NavigationBar title={titleConfig} rightButton={rightButtonConfig}/>
+                </View>
                 <View style={styles.line} />
                 <View style={{flexDirection:'row',justifyContent:'space-between',width:width}} >
                     <TextInput
+                     underlineColorAndroid={'transparent'}
                     placeholder={'Search Planets'}
                         style={{
                         height: 40,

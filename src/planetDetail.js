@@ -3,11 +3,7 @@ import {
     Text,
     Image,
     View,
-    KeyboardAvoidingView,
     Dimensions,
-    ImageBackground,
-    TextInput,
-    FlatList,
     TouchableOpacity
 } from 'react-native';
 import styles from "../assets/styles";

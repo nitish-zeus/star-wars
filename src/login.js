@@ -101,7 +101,6 @@ export default class Login extends React.Component {
                 flex: 1
             }}>
                 <ImageBackground source={backGroundImage} style={styles.backgroundImage}>
-
                     <View style={styles.loginContainer}>
                         <KeyboardAvoidingView
                             style={{
@@ -124,6 +123,7 @@ export default class Login extends React.Component {
                                     Username
                                 </Text>
                                 <TextInput
+                                 underlineColorAndroid={'transparent'}
                                     style={{
                                     height: 40,
                                     borderColor: 'gray',
@@ -141,6 +141,7 @@ export default class Login extends React.Component {
                                     Password
                                 </Text>
                                 <TextInput
+                                underlineColorAndroid={'transparent'}
                                     style={{
                                     height: 40,
                                     borderColor: 'gray',
